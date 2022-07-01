@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/basic"
+    app:contentPadding="@dimen/basic"
+    app:cardCornerRadius="@dimen/basic"
+    app:cardBackgroundColor="@color/teal_200"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardMaxElevation="@dimen/basic"
+    app:cardPreventCornerOverlap="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:id="@+id/imageView"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginStart="@dimen/basic"
+            android:layout_marginTop="@dimen/basic"
+            android:padding="@dimen/basic"></ImageView>
+
+        <TextView
+            android:id="@+id/TextViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageView"
+            android:layout_marginStart="@dimen/basic"
+            android:layout_marginLeft="@dimen/basic"
+            android:layout_toRightOf="@id/imageView"
+            android:padding="2dp"
+            android:text="This is main text"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewMain"
+            android:layout_marginLeft="@dimen/basic"
+            android:layout_toRightOf="@id/imageView"
+            android:padding="2dp"
+            android:text="This is second text"
+            android:textSize="15dp"
+
+            ></TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
